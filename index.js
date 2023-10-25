@@ -4,7 +4,7 @@ const port = 4000;
 
 mongoose.Promise = global.Promise;
 
-async function run(){
+const run = async () => {
     await mongoose.connect("your db url", {
     useNewUrlParser: true,
     useUnifiedTopology: true
